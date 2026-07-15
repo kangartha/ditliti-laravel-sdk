@@ -1,0 +1,32 @@
+{
+  "name": "ditliti/laravel-sdk",
+  "description": "Official Laravel exception reporter SDK for Ditliti (self-hosted error tracking, tracing, replays, and profiling ingestion).",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/kangartha/inspectora/tree/main/sdk/php-laravel",
+  "authors": [
+    {
+      "name": "candrabasic"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/kangartha/inspectora/issues",
+    "source": "https://github.com/kangartha/inspectora"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ditliti\\Laravel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ditliti\\Laravel\\DitlitiServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.0"
+  }
+}
